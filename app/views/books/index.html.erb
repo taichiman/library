@@ -1,10 +1,11 @@
 <h1>список книг</h1>
-
+<% provide( :title, 'Book list' ) %>
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Author</th>
+      <th>Place</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
+        <td><%= book.place_id %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>

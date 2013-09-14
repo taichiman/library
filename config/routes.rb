@@ -1,5 +1,6 @@
 Library::Application.routes.draw do
   root "books#index"
+  resources :places
   resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.

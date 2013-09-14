@@ -13,11 +13,15 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :size => 120 %>
   </div>
   <div class="field">
     <%= f.label :author %><br>
     <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :place_id %><br>
+    <%= f.text_field :place_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
