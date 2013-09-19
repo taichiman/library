@@ -16,3 +16,5 @@
 /tmp
 
 .secret
+library_development
+library_test
